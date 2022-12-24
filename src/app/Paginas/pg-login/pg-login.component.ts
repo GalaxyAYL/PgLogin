@@ -1,4 +1,6 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterOutlet  } from '@angular/router';
 
 @Component({
   selector: 'app-pg-login',
@@ -6,12 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pg-login.component.css']
 })
 export class PgLoginComponent implements OnInit {
-
-  constructor() { }
+  constructor(private router:Router) {}
 
   ngOnInit(): void {
   }
 
-  
+  usuario:any;
+  nombre:any;
+  apellido:any;
+  ciudad:any;
+  email:any;
+  fechaNacimiento:any;
+  passwd:any;
+
+  paso:boolean=false;
+
+
+  confirmar():boolean{
+
+    return this.paso;
+  }
 }
 

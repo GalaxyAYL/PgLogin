@@ -1,0 +1,12 @@
+{
+  "user":{
+    "usuario":"glxayl",
+    "nombre":"Jose",
+    "apellido":"Ayala",
+    "ciudad":"Cuenca",
+    "email":"jose.ayalaz@glxayl.com",
+    "fechaNacimiento":"25/07/2005",
+    "passwd":"ayala123"
+  }
+};
+
