@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import datosUsuarios from 'src/assets/json/usuarios.json';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,4 @@ import datosUsuarios from 'src/assets/json/usuarios.json';
 })
 export class AppComponent {
   title = 'Login';
-  Users: any = datosUsuarios;
 }

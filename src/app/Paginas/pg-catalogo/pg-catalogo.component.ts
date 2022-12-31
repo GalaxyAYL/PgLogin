@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pg-catalogo',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PgCatalogoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) {}
 
   ngOnInit(): void {
-  }
 
+  }
+  user:any=localStorage.getItem('nombre');
 }

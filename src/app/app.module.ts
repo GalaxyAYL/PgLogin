@@ -7,6 +7,7 @@ import { PgLoginComponent } from './Paginas/pg-login/pg-login.component';
 import { PgCatalogoComponent } from './Paginas/pg-catalogo/pg-catalogo.component';
 import { PgErrorComponent } from './Paginas/pg-error/pg-error.component';
 import { FormsModule } from '@angular/forms';
+import { LoginService } from './login.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
