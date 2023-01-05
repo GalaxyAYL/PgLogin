@@ -1,0 +1,31 @@
+.principal{
+  width: 250px;
+  background: #f1f1f17b;
+  padding: 30px;margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;color: rgb(0, 0, 0);
+  font-family: 'Bank Gothic', sans-serif;
+  box-shadow: 7px 13px 37px #a159ff78;
+}
+
+
+
+.ingresos{
+  width: 90%;
+  background: #e0e0e05a;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #8805edc3;
+  font-family: 'Bank Gothic', sans-serif;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+}
+
+.form-register p {
+height: 10px;
+text-align: left;
+font-size: 18px;
+}
+
+
