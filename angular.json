@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Login": {
+    "glxayl": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Login",
+            "outputPath": "dist/glxayl",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Login:build"
+            "browserTarget": "glxayl:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Login:build:production"
+              "browserTarget": "glxayl:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Login:build"
+            "browserTarget": "glxayl:build"
           }
         },
         "test": {
@@ -110,19 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Login:serve"
+            "devServerTarget": "glxayl:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Login:serve:production"
+              "devServerTarget": "glxayl:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Login",
+  "defaultProject": "glxayl",
   "cli": {
-    "analytics": "21155e66-e506-409a-ad1b-a7b57379d007"
+    "analytics": "6cbcf537-65d7-4050-8e65-e76e0ae914b2"
   }
 }

@@ -1,22 +1,22 @@
-import { PgErrorComponent } from './Paginas/pg-error/pg-error.component';
-import { PgCatalogoComponent } from './Paginas/pg-catalogo/pg-catalogo.component';
-import { PgLoginComponent } from './Paginas/pg-login/pg-login.component';
+import { ErrorComponent } from './direcciones/error/error.component';
+import { MainComponent } from './direcciones/main/main.component';
+import { LoginComponent } from './direcciones/login/login.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
   {
-    path: '', component:PgLoginComponent
+    path: '', component:LoginComponent
   },
   {
-    path:'pgLogin', component:PgLoginComponent
+    path:'pgLogin', component:LoginComponent
   },
   {
-    path:'pgCat',component: PgCatalogoComponent
+    path:'pgMain',component: MainComponent
   },
   {
-    path:'pgError',component: PgErrorComponent
+    path:'pgError',component: ErrorComponent
   }
 ];
 
