@@ -16,4 +16,5 @@ export class MainComponent implements OnInit {
   regresar(){
     this.router.navigate(['pgLogin'])
   }
+
 }

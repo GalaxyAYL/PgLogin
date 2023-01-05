@@ -11,8 +11,9 @@ export class LoginComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit() {
+    localStorage.clear();
     localStorage.setItem('usuarioE', "glxayl")
-    localStorage.setItem('passwdE', "glxay1")
+    localStorage.setItem('passwdE', "glxayl")
   }
 
   //-----------------------------MIS VARIABLES------------------------------
