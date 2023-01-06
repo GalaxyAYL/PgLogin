@@ -1,3 +1,4 @@
+import { FacturaComponent } from './direcciones/factura/factura.component';
 import { MainComponent } from './direcciones/main/main.component';
 import { LoginComponent } from './direcciones/login/login.component';
 import { ErrorComponent } from './direcciones/error/error.component';
@@ -13,7 +14,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     ErrorComponent,
     LoginComponent,
-    MainComponent
+    MainComponent,
+    FacturaComponent
   ],
   imports: [
     BrowserModule,

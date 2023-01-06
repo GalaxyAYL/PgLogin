@@ -1,3 +1,4 @@
+import { FacturaComponent } from './direcciones/factura/factura.component';
 import { ErrorComponent } from './direcciones/error/error.component';
 import { MainComponent } from './direcciones/main/main.component';
 import { LoginComponent } from './direcciones/login/login.component';
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     path:'pgError',component: ErrorComponent
+  },
+  {
+    path:'Factura',component: FacturaComponent
   }
 ];
 
