@@ -17,6 +17,11 @@ export class FacturaComponent implements OnInit {
 
   //MIS VARIABLES
   producto:Producto
+  id:String;
+  descripcion:String;
+  cantidad:number;
+  precio:number;
+
 
   recuperar(){
     this.producto=JSON.parse(localStorage.getItem('comprados'))
