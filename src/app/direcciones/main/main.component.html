@@ -113,45 +113,135 @@
 
   </section>
 <br>
+
 <div class="b-example-divider"></div>
 <br>
   <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
     <img src="\assets\img\Catalogo\Sanduche.jpg" height="180" class="card-img-top" >
     <div class="card-body">
-      <strong class="card-text" style="font-size: 20px; "></strong>
-      <p  class="card-text" style="font-size: 20px; " >1</p>
+      <strong class="card-text" style="font-size: 20px; ">{{matriz[0][1]}}</strong>
+      <p class="card-title" style="text-align: left; font-size: 10px;" >{{matriz[0][0]}}</p>
       <br>
-      <p class="card-title" style="text-align: center; font-size: 20px;" >{{iPhone.getDescripcion}}</p>
+      <p class="card-title" style="text-align: center; font-size: 20px;" >{{matriz[0][2]}}</p>
         <br>
-      <strong class="card-text" style="text-align: center; display: inline-block;">COSTO: {{iPhone.getPrecio}} </strong>
-      <!---<input class="ingresos" type="number" [(ngModel)]="cantidad" required>
+      <strong class="card-text" style="text-align: center; display: inline-block;">{{matriz[0][3]}}</strong>
 
-      <button  [(ngModel)]="articulo" (click)="agregar()" class="btn btn-primary" style="display: inline-block; ">
-        <svg  (click)="agregar()" class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
-      </button>
-      -->
-      <button (click)="agregar1()" class="btn btn-primary" style="display: inline-block; ">
+      <button (click)="agregar1()" class="btn btn-primary" style="display: inline-block; margin-left: 90px;">
         <svg  class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
       </button>
     </div>
   </div>
 
   <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
-    <img src="\assets\img\Catalogo\Sanduche.jpg" height="180" class="card-img-top" >
+    <img src="\assets\img\Catalogo\iphone.jpg" height="180" class="card-img-top" >
     <div class="card-body">
-      <strong class="card-text" style="font-size: 20px; "></strong>
-      <p  class="card-text" style="font-size: 20px; " >1</p>
+      <strong class="card-text" style="font-size: 20px; ">{{matriz[1][1]}}</strong>
+      <p class="card-title" style="text-align: left; font-size: 10px;" >{{matriz[1][0]}}</p>
       <br>
-      <p class="card-title" style="text-align: center; font-size: 20px;" >{{iPhone.getDescripcion}}</p>
+      <p class="card-title" style="text-align: center; font-size: 20px;" >{{matriz[1][2]}}</p>
         <br>
-      <strong class="card-text" style="text-align: center; display: inline-block;">COSTO: {{iPhone.getPrecio}} </strong>
-      <!---<input class="ingresos" type="number" [(ngModel)]="cantidad" required>
+      <strong class="card-text" style="text-align: center; display: inline-block;">{{matriz[1][3]}}</strong>
 
-      <button  [(ngModel)]="articulo" (click)="agregar()" class="btn btn-primary" style="display: inline-block; ">
-        <svg  (click)="agregar()" class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
+      <button (click)="agregar2()" class="btn btn-primary" style="display: inline-block; margin-left: 90px;">
+        <svg  class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
       </button>
-      -->
-      <button (click)="agregar2()" class="btn btn-primary" style="display: inline-block; ">
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
+    <img src="\assets\img\Catalogo\kiwi.jpg" height="180" class="card-img-top" >
+    <div class="card-body">
+      <strong class="card-text" style="font-size: 20px; ">{{matriz[2][1]}}</strong>
+      <p class="card-title" style="text-align: left; font-size: 10px;" >{{matriz[2][0]}}</p>
+      <br>
+      <p class="card-title" style="text-align: center; font-size: 20px;" >{{matriz[2][2]}}</p>
+        <br>
+      <strong class="card-text" style="text-align: center; display: inline-block;">{{matriz[2][3]}}</strong>
+
+      <button (click)="agregar2()" class="btn btn-primary" style="display: inline-block; margin-left: 90px;">
+        <svg  class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
+    <img src="\assets\img\Catalogo\dogo.jpg" height="180" class="card-img-top" >
+    <div class="card-body">
+      <strong class="card-text" style="font-size: 20px; ">{{matriz[3][1]}}</strong>
+      <p class="card-title" style="text-align: left; font-size: 10px;" >{{matriz[3][0]}}</p>
+      <br>
+      <p class="card-title" style="text-align: center; font-size: 20px;" >{{matriz[3][2]}}</p>
+        <br>
+      <strong class="card-text" style="text-align: center; display: inline-block;">{{matriz[3][3]}}</strong>
+
+      <button (click)="agregar2()" class="btn btn-primary" style="display: inline-block; margin-left: 90px;">
+        <svg  class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
+    <img src="\assets\img\Catalogo\neon.jpg" height="180" class="card-img-top" >
+    <div class="card-body">
+      <strong class="card-text" style="font-size: 20px; ">{{matriz[4][1]}}</strong>
+      <p class="card-title" style="text-align: left; font-size: 10px;" >{{matriz[4][0]}}</p>
+      <br>
+      <p class="card-title" style="text-align: center; font-size: 20px;" >{{matriz[4][2]}}</p>
+        <br>
+      <strong class="card-text" style="text-align: center; display: inline-block;">{{matriz[4][3]}}</strong>
+
+      <button (click)="agregar2()" class="btn btn-primary" style="display: inline-block; margin-left: 90px;">
+        <svg  class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
+    <img src="\assets\img\Catalogo\fondoLogin.jpg" height="180" class="card-img-top" >
+    <div class="card-body">
+      <strong class="card-text" style="font-size: 20px; ">{{matriz[5][1]}}</strong>
+      <p class="card-title" style="text-align: left; font-size: 10px;" >{{matriz[5][0]}}</p>
+      <br>
+      <p class="card-title" style="text-align: center; font-size: 20px;" >{{matriz[5][2]}}</p>
+        <br>
+      <strong class="card-text" style="text-align: center; display: inline-block;">{{matriz[5][3]}}</strong>
+
+      <button (click)="agregar2()" class="btn btn-primary" style="display: inline-block; margin-left: 90px;">
+        <svg  class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
+    <img src="\assets\img\Catalogo\iphone.jpg" height="180" class="card-img-top" >
+    <div class="card-body">
+      <strong class="card-text" style="font-size: 20px; ">{{matriz[0][1]}}</strong>
+      <p class="card-title" style="text-align: left; font-size: 10px;" >{{matriz[0][0]}}</p>
+      <br>
+      <p class="card-title" style="text-align: center; font-size: 20px;" >{{matriz[0][2]}}</p>
+        <br>
+      <strong class="card-text" style="text-align: center; display: inline-block;">{{matriz[0][3]}}</strong>
+
+      <button (click)="agregar2()" class="btn btn-primary" style="display: inline-block; margin-left: 90px;">
+        <svg  class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
+    <img src="\assets\img\Catalogo\iphone.jpg" height="180" class="card-img-top" >
+    <div class="card-body">
+      <strong class="card-text" style="font-size: 20px; ">{{matriz[0][1]}}</strong>
+      <p class="card-title" style="text-align: left; font-size: 10px;" >{{matriz[0][0]}}</p>
+      <br>
+      <p class="card-title" style="text-align: center; font-size: 20px;" >{{matriz[0][2]}}</p>
+        <br>
+      <strong class="card-text" style="text-align: center; display: inline-block;">{{matriz[0][3]}}</strong>
+
+      <button (click)="agregar2()" class="btn btn-primary" style="display: inline-block; margin-left: 90px;">
         <svg  class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
       </button>
     </div>
@@ -160,6 +250,83 @@
 </body>
 <br>
 <br>
+
+<script>
+ var disponibles=[
+{"id": "1",
+"nombre": "iPhone (1.ª generación)",
+"descripcion": "Lanzado en junio de 2008.",
+"cantidad": "1",
+"precio": "200"
+},
+{"id": "2",
+"nombre": "iPhone 3G",
+"descripcion":"Lanzado en junio de 2008",
+"cantidad": "1",
+"precio": "299"
+},
+{"id": "3",
+"nombre": "iPhone 3GS",
+"descripcion": "Lanzamiento junio de 2009",
+"cantidad": "1",
+"precio": "369"
+},
+{"id": "4",
+"nombre": "iPhone 4",
+"descripcion": "Lanzado en octubre de 2011",
+"cantidad": "1",
+"precio": "300"
+},
+{"id": "5",
+"nombre": "Phone 4s",
+"descripcion": "Lanzado en octubre de 2011",
+"cantidad": "1",
+"precio": "199"
+},
+{"id": "6",
+"nombre": "iPhone 5",
+"descripcion": "Lanzado en septiembre del 2012",
+"cantidad": "1",
+"precio": "250"
+},
+{"id": "7",
+"nombre": "iPhone 5S",
+"descripcion": "Lanzado en septiembre de 2013",
+"cantidad": "1",
+"precio": "250"
+},
+{"id": "8",
+"nombre": "iPhone5C",
+"descripcion": "Lanzado en septiembre de 2013",
+"cantidad": "1",
+"precio": "650"
+},
+{"id": "7",
+"nombre": "iPhone 6",
+"descripcion": "Lanzado en septiembre del 2014",
+"cantidad": "1",
+"precio": "299"
+},
+{"id": "8",
+"nombre": "iPhone 6 Plus",
+"descripcion": "Lanzado en septiembre del 2014",
+"cantidad": "1",
+"precio": "499"
+},
+{"id": "9",
+"nombre": "iPhone 6s Plus",
+"descripcion": "Lanzado en junio de 2008.",
+"cantidad": "1",
+"precio": "699"
+}
+]
+
+   let foo = myArray.map(function(bar)
+  {
+    return '<p>'+bar.id+'</p>'
+  })
+  document.getElementById("foo").innerHTML = foo;
+</script>
 <br>
 <br>
 <br>

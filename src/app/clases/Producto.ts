@@ -6,14 +6,11 @@ export class Producto{
     public id:String,
     public nombre:String,
     private descripcion:String,
-    private cantidad:number,
+    public cantidad:number,
     private precio:number,
   )
   {}
 
-  public parseProducto(producto:String){
-
-  }
 
 
   public getId() {
@@ -28,6 +25,10 @@ export class Producto{
     return this.descripcion;
   }
 
+  public setCantidad(cantidad: number):void {
+    this.cantidad=cantidad;
+  }
+
   public getCantidad() {
     return this.cantidad;
   }
@@ -40,4 +41,5 @@ export class Producto{
     this.precioFinal=cantidad*precio;
     return this.precioFinal;
   }
+
 }

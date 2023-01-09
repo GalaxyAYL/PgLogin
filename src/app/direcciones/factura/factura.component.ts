@@ -1,3 +1,4 @@
+
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Producto } from './../../clases/Producto';
@@ -12,19 +13,35 @@ export class FacturaComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit() {
-    this.recuperar();
+    this.comprados=JSON.parse(localStorage.getItem('comprados'))
   }
 
-  //MIS VARIABLES
-  producto:Producto
-  id:String;
-  descripcion:String;
-  cantidad:number;
-  precio:number;
+  //MIS VARIABLES Y OBJETOS
+  comprados:Producto[]=[];
+  articulo:string
+  value:any;
 
 
-  recuperar(){
-    this.producto=JSON.parse(localStorage.getItem('comprados'))
-  }
+  /*obtenerInformacion1(){
+    document.getElementById('nombre').value=this.comprados[0];
+  }*/
 
+  public matriz: Array<Array<string>>=[
+    ['1','iPhone (1.ª generación)','Lanzado en junio de 2007','200'],
+    ['2','iPhone 3G','Lanzado en junio de 2007','299'],
+    ['3','iPhone 3GS','Lanzamiento junio de 2009','368']
+  ]
+  public matrizComprados: Array<Array<String>>
+
+
+  /*rellenarArray(){
+    for (let i:number;i<=this.comprados.length;i++) {
+      for (let j:number;j<=this.comprados.length;j++) {
+        if (this.comprados[i].getNombre()==this.matriz[j][1]){
+          this.matrizComprados.push(this.matriz[j])
+        }
+      }
+    }
+
+  }*/
 }

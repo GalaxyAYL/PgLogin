@@ -2,6 +2,7 @@ import { Producto } from './../../clases/Producto';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import data from 'src/assets/scripts.js';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-main',
@@ -12,7 +13,7 @@ export class MainComponent implements OnInit {
   constructor(private router:Router) { }
 
   //MIS PRODUCTOS
-  public iPhone:Producto = new Producto("1","iPhone (1.ª generación)","También es conocido como iPhone 2G, iPhone original o iPhone classic.", 1,200);
+  public iPhone:Producto = new Producto("1","iPhone (1.ª generación)","Lanzado en junio de 2007", 1,200);
   public iPhone3G:Producto = new Producto("2","iPhone 3G","Lanzado en junio de 2008.", 1,299);
   public iPhone3GS:Producto = new Producto("3","iPhone 3GS","Lanzamiento junio de 2009", 1,369);
   public iPhone4:Producto = new Producto("4" ,"iPhone 4","Lanzado en octubre de 2011", 1,300);
@@ -29,12 +30,22 @@ public disponibles:Producto[]=[this.iPhone,this.iPhone3G,this.iPhone3GS,this.iPh
                               ,this.iPhone5C,this.iPhone6,this.iPhone6Plus,this.iPhone6sPlus];
 public comprados:Producto[]=[];
 public cantidad:number;
+public arregloHTML:string;
 articulo:string
+dato:number//DATO DEL PRODUCTO
+producto:number //FILAS DE LOS PRODUCTOS
+
+public matriz: Array<Array<String>>=[
+  ['HDC-001','iPhone (1.ª generación)','Lanzado en junio de 2007','200'],
+  ['2','iPhone 3G','Lanzado en junio de 2007','299'],
+  ['3','iPhone 3GS','Lanzamiento junio de 2009','368']
+]
 
   //MIS METODOS
   ngOnInit(): void {
     localStorage.clear();
   }
+
 
   public buscarProducto(disponibles:Producto[],IdProducto:String):number{
       let indice: number=0;
@@ -106,9 +117,7 @@ articulo:string
     localStorage.setItem('comprados',JSON.stringify(this.comprados));
   }*/
 
-  obtenerInformacion(articulo: Producto,){
 
-  }
 
   pgPagar(){
     localStorage.setItem('comprados',JSON.stringify(this.comprados));
