@@ -1,24 +1,38 @@
+
 export class Producto{
   private precioFinal:number
   constructor
   (
-    public ID:String,
+    public id:String,
+    public nombre:String,
     private descripcion:String,
     private cantidad:number,
     private precio:number,
-
   )
   {}
 
-  public getDescripcion():String {
+  public parseProducto(producto:String){
+
+  }
+
+
+  public getId() {
+    return this.id;
+  }
+
+  public getNombre() {
+    return this.nombre;
+  }
+
+  public getDescripcion() {
     return this.descripcion;
   }
 
-  public getCantidad():number {
+  public getCantidad() {
     return this.cantidad;
   }
 
-  public getPrecio():number {
+  public getPrecio() {
     return this.precio;
   }
 

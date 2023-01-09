@@ -1,6 +1,7 @@
 import { Producto } from './../../clases/Producto';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import data from 'src/assets/scripts.js';
 
 @Component({
   selector: 'app-main',
@@ -10,36 +11,116 @@ import { Router } from '@angular/router';
 export class MainComponent implements OnInit {
   constructor(private router:Router) { }
 
-  //MIS VARIABLES Y OBJETOS
+  //MIS PRODUCTOS
+  public iPhone:Producto = new Producto("1","iPhone (1.ª generación)","También es conocido como iPhone 2G, iPhone original o iPhone classic.", 1,200);
+  public iPhone3G:Producto = new Producto("2","iPhone 3G","Lanzado en junio de 2008.", 1,299);
+  public iPhone3GS:Producto = new Producto("3","iPhone 3GS","Lanzamiento junio de 2009", 1,369);
+  public iPhone4:Producto = new Producto("4" ,"iPhone 4","Lanzado en octubre de 2011", 1,300);
+  public iPhone4s:Producto = new Producto("5","iPhone 4s","Lanzado en octubre de 2011", 1,199);
+  public iPhone5:Producto = new Producto("6","iPhone 5","Lanzado en septiembre del 2012", 1,250);
+  public iPhone5S:Producto = new Producto("7","iPhone 5S","Lanzado en septiembre de 2013", 1,250);
+  public iPhone5C:Producto = new Producto("8","iPhone5C","Lanzado en septiembre de 2013", 1,649);
+  public iPhone6:Producto = new Producto("9","iPhone 6","Lanzado en septiembre del 2014", 1,199);
+  public iPhone6Plus:Producto = new Producto("10","iPhone 6 Plus","Lanzado en septiembre del 2014", 1,299);
+  public iPhone6sPlus:Producto = new Producto("11","iPhone 6s Plus","iPhone 6s Plus", 1,599);
 
-  id:String;
-  descripcion:String;
-  cantidad:number;
-  precio:number;
-
-  producto:Producto
-
-  comprados: Array<Producto>;
+//MIS VARIABLES Y OBJETOS
+public disponibles:Producto[]=[this.iPhone,this.iPhone3G,this.iPhone3GS,this.iPhone4,this.iPhone4s,this.iPhone5,this.iPhone5S
+                              ,this.iPhone5C,this.iPhone6,this.iPhone6Plus,this.iPhone6sPlus];
+public comprados:Producto[]=[];
+public cantidad:number;
+articulo:string
 
   //MIS METODOS
-  ngOnInit() {
+  ngOnInit(): void {
     localStorage.clear();
   }
 
-  regresar(){
-    this.router.navigate(['pgLogin'])
+  public buscarProducto(disponibles:Producto[],IdProducto:String):number{
+      let indice: number=0;
+      let encontrado:boolean=false;
+      for (let i:number=0;i<disponibles.length;i++)
+      {
+          if (disponibles[i].getId()==IdProducto)
+          {
+              encontrado=true;
+              indice=i;
+          }
+      }
+      if (encontrado==false)
+      {
+          indice=-1;
+      }
+      return indice;
   }
 
-  facturar(){
-    this.producto=new Producto("Sanduche de pollo","Pan, cebolla, tomate, pollo, carne, lechuga,adereso, mayonesa, mostaza, champinon"
-    , 2,5);
-    //this.comprados.push(this.producto)
-    //localStorage.setItem('comprados',JSON.stringify(this.comprados));
-    localStorage.setItem('comprados',JSON.stringify(this.producto));
+  agregar0(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'0')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }
+
+  agregar1(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'1')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }
+  agregar2(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'2')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }
+  agregar3(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'3')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }
+  agregar4(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'4')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }
+  agregar5(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'5')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }
+  agregar6(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'6')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }
+  agregar7(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'7')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }
+  agregar8(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'8')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }
+  agregar9(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'9')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }
+  agregar10(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'10')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }
+
+
+  /*agregar(){
+    this.comprados.push(this.disponibles[this.buscarProducto(this.disponibles,'1')]);
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
+  }*/
+
+  obtenerInformacion(articulo: Producto,){
+
+  }
+
+  pgPagar(){
+    localStorage.setItem('comprados',JSON.stringify(this.comprados));
     this.pgFactura();
   }
+
+ //DIRECCION ROUTES
   pgFactura(){
     this.router.navigate(['Factura'])
+  }
+  pgMain(){
+    this.router.navigate(['pgMain'])
   }
 
 }

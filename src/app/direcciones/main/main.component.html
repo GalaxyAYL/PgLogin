@@ -118,105 +118,45 @@
   <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
     <img src="\assets\img\Catalogo\Sanduche.jpg" height="180" class="card-img-top" >
     <div class="card-body">
-      <strong class="card-text" style="font-size: 20px; " [(ngModel)]="descripcion">SANDUCHE DE POLLO</strong>
-      <p class="card-title" style="text-align: left; font-size: 10px; " [(ngModel)]="id" >HDC-0001</p>
+      <strong class="card-text" style="font-size: 20px; "></strong>
+      <p  class="card-text" style="font-size: 20px; " >1</p>
       <br>
-      <p class="card-title" style="text-align: center; font-size: 20px;" [(ngModel)]="id" >Pan, cebolla, tomate, pollo, carne, lechuga,
-        adereso, mayonesa, mostaza, champinon</p>
+      <p class="card-title" style="text-align: center; font-size: 20px;" >{{iPhone.getDescripcion}}</p>
         <br>
-      <strong class="card-text" style="text-align: center; display: inline-block;" [(ngModel)]="precio">COSTO:  </strong>
-      <p class="card-text" style="text-align: center;display: inline-block;" [(ngModel)]="precio">$ 5,44</p>
-      <input class="ingresos" type="number" [(ngModel)]="cantidad" required>
+      <strong class="card-text" style="text-align: center; display: inline-block;">COSTO: {{iPhone.getPrecio}} </strong>
+      <!---<input class="ingresos" type="number" [(ngModel)]="cantidad" required>
 
-      <button (click)="facturar()" class="btn btn-primary" style="display: inline-block; ">
-        <svg (click)="facturar()" class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
+      <button  [(ngModel)]="articulo" (click)="agregar()" class="btn btn-primary" style="display: inline-block; ">
+        <svg  (click)="agregar()" class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
       </button>
-
+      -->
+      <button (click)="agregar1()" class="btn btn-primary" style="display: inline-block; ">
+        <svg  class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
+      </button>
     </div>
   </div>
 
   <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
-    <img src="\assets\img\Catalogo\iphone.jpg" height="180" class="card-img-top" >
+    <img src="\assets\img\Catalogo\Sanduche.jpg" height="180" class="card-img-top" >
     <div class="card-body">
-      <strong class="card-text" style="font-size: 20px; " [(ngModel)]="descripcion">IPHONE PRO MAX</strong>
-      <p class="card-title" style="text-align: left; font-size: 10px; " [(ngModel)]="id" >HDC-0010</p>
-<br>
-
-      <p class="card-title" style="text-align: center; font-size: 20px;" [(ngModel)]="id" >El iphone que quieres pero el que la economia no alcanza
-      algun rato lo tendras, en frente porque no</p>
-        <br>
-
-      <strong class="card-text" style="text-align: center; display: inline-block;" [(ngModel)]="precio">COSTO:  </strong>
-      <p class="card-text" style="text-align: center;display: inline-block;" [(ngModel)]="precio">$ 1000,99</p>
-      <input class="ingresos" type="number" [(ngModel)]="cantidad" required>
-
-      <button (click)="facturar()" class="btn btn-primary" style="display: inline-block; ">
-        <svg (click)="facturar()" class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
-      </button>
-
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
-    <img src="\assets\img\Catalogo\kiwi.jpg" height="180" class="card-img-top" >
-    <div class="card-body">
-      <strong class="card-text" style="font-size: 20px; " [(ngModel)]="descripcion">KIWI-AGRIO</strong>
-      <p class="card-title" style="text-align: left; font-size: 10px; " [(ngModel)]="id" >HDC-0100</p>
+      <strong class="card-text" style="font-size: 20px; "></strong>
+      <p  class="card-text" style="font-size: 20px; " >1</p>
       <br>
-      <p class="card-title" style="text-align: center; font-size: 20px;" [(ngModel)]="id" >Este kiwi es mas agrio de lo nomal pero eso qe importa
-        esta fresco el pana, comible y masticable</p>
+      <p class="card-title" style="text-align: center; font-size: 20px;" >{{iPhone.getDescripcion}}</p>
         <br>
-      <strong class="card-text" style="text-align: center; display: inline-block;" [(ngModel)]="precio">COSTO:  </strong>
-      <p class="card-text" style="text-align: center;display: inline-block;" [(ngModel)]="precio">$ 5,44</p>
-      <input class="ingresos" type="number" [(ngModel)]="cantidad" required>
+      <strong class="card-text" style="text-align: center; display: inline-block;">COSTO: {{iPhone.getPrecio}} </strong>
+      <!---<input class="ingresos" type="number" [(ngModel)]="cantidad" required>
 
-      <button (click)="facturar()" class="btn btn-primary" style="display: inline-block; ">
-        <svg (click)="facturar()" class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
+      <button  [(ngModel)]="articulo" (click)="agregar()" class="btn btn-primary" style="display: inline-block; ">
+        <svg  (click)="agregar()" class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
       </button>
-
+      -->
+      <button (click)="agregar2()" class="btn btn-primary" style="display: inline-block; ">
+        <svg  class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
+      </button>
     </div>
   </div>
 
-  <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
-    <img src="\assets\img\Catalogo\neon.jpg" height="180" class="card-img-top" >
-    <div class="card-body">
-      <strong class="card-text" style="font-size: 20px; " [(ngModel)]="descripcion">NEON</strong>
-      <p class="card-title" style="text-align: left; font-size: 10px; " [(ngModel)]="id" >HDC-1000</p>
-      <br>
-      <p class="card-title" style="text-align: center; font-size: 20px;" [(ngModel)]="id" >Las luces neon son ideales para aclarar lo que no ves, la oscuridad
-        sera incluso mejor obsion al amarillo neon</p>
-        <br>
-      <strong class="card-text" style="text-align: center; display: inline-block;" [(ngModel)]="precio">COSTO:  </strong>
-      <p class="card-text" style="text-align: center;display: inline-block;" [(ngModel)]="precio">$ 5,44</p>
-      <input class="ingresos" type="number" [(ngModel)]="cantidad" required>
-
-      <button (click)="facturar()" class="btn btn-primary" style="display: inline-block; ">
-        <svg (click)="facturar()" class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
-      </button>
-
-    </div>
-  </div>
-
-
-  <div class="card" style="width: 18rem; display: inline-block; padding: 10px; margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
-    <img src="\assets\img\Catalogo\dogo.jpg" height="180" class="card-img-top" >
-    <div class="card-body">
-      <strong class="card-text" style="font-size: 20px; " [(ngModel)]="descripcion">DOGO ARGENTINO</strong>
-      <p class="card-title" style="text-align: left; font-size: 10px; " [(ngModel)]="id" >HDC-CAMPEON</p>
-      <br>
-      <p class="card-title" style="text-align: center; font-size: 20px;" [(ngModel)]="id" >Quien no va a querer un perro dogo de la argentina
-        si no te hace una empanada te hace campeon del mundo</p>
-        <br>
-      <strong class="card-text" style="text-align: center; display: inline-block;" [(ngModel)]="precio">COSTO:  </strong>
-      <p class="card-text" style="text-align: center;display: inline-block;" [(ngModel)]="precio">$ 5,44</p>
-      <input class="ingresos" type="number" [(ngModel)]="cantidad" required>
-
-      <button (click)="facturar()" class="btn btn-primary" style="display: inline-block; ">
-        <svg (click)="facturar()" class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
-      </button>
-
-    </div>
-  </div>
 </body>
 <br>
 <br>
