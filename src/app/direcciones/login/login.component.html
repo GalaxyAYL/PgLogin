@@ -1,23 +1,38 @@
 <link href="https://fonts.cdnfonts.com/css/bank-gothic" rel="stylesheet">
 
-<body>
-  <section >
-    <div class="principal">
+<!doctype html>
+<html lang="en" style="background-color: black;font-family: 'Bank Gothic', sans-serif;" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>Signin Template · Bootstrap v5.3</title>
 
-      <p style="font-size: 20px; margin-bottom: 20px; text-align: center;">PAGINA INGRESO JOSE AYALA</p>
-      <br>
-
-      <section class="form-register">
-        <p style="font-size: 20px;"> Usuario</p>
-        <input class="ingresos" type="text" placeholder="ingrese usuario" [(ngModel)]="usuario" required>
-        <p style="font-size: 20px;">passwd</p>
-        <input class="ingresos" type="password" placeholder="ingrese clave" [(ngModel)]="passwd" required>
-      </section>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
 
 
-      <button style="width: 100%;background: #dcaffff0; border-radius: 6px; padding: 12px;
-      color: rgb(37, 37, 37);border-color: rgb(0, 0, 0); margin: 16px 0; font-size: 16px; " (click)="almacenar()">LOGIN</button>
-    </div>
+
+
+
+<link href="login.component.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+
+<div class="form-signin w-100 m-auto" style="background-color: rgba(94, 94, 94, 0.505);">
+  <section class="form-register">
+    <h1 class="h3 mb-3 fw-normal">Usuario</h1>
+    <input class="ingresos" type="text" placeholder="ingrese usuario" [(ngModel)]="usuario" required>
+    <h1 class="h3 mb-3 fw-normal">Passwd</h1>
+    <input class="ingresos" type="password" placeholder="ingrese clave" [(ngModel)]="passwd" required>
   </section>
-</body>
 
+
+  <button style="width: 100%;background: #dcaffff0; border-radius: 6px; padding: 12px;
+  color: rgb(37, 37, 37);border-color: rgb(0, 0, 0); margin: 16px 0; font-size: 16px; " (click)="almacenar()">LOGIN</button>
+</div>
+
+
+  </body>
+</html>

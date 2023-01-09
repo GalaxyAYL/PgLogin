@@ -13,11 +13,12 @@ export class FacturaComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit() {
-    this.comprados=JSON.parse(localStorage.getItem('comprados'))
+    this.comprados=localStorage.getItem('comprados')
+    //this.rellenarArray();
   }
 
   //MIS VARIABLES Y OBJETOS
-  comprados:Producto[]=[];
+  comprados:string;
   articulo:string
   value:any;
 
@@ -39,9 +40,20 @@ export class FacturaComponent implements OnInit {
       for (let j:number;j<=this.comprados.length;j++) {
         if (this.comprados[i].getNombre()==this.matriz[j][1]){
           this.matrizComprados.push(this.matriz[j])
-        }
+        }s
       }
     }
-
   }*/
+
+  //DIRECCION ROUTES
+  pgFactura(){
+    this.router.navigate(['Factura'])
+  }
+  pgMain(){
+    this.router.navigate(['pgMain'])
+  }
+  pgLogin(){
+    this.router.navigate(['pgLogin'])
+  }
+
 }

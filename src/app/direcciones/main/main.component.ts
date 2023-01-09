@@ -131,6 +131,9 @@ public matriz: Array<Array<String>>=[
   pgMain(){
     this.router.navigate(['pgMain'])
   }
+  pgLogin(){
+    this.router.navigate(['pgLogin'])
+  }
 
 }
 

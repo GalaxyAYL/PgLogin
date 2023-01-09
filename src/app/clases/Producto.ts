@@ -3,7 +3,7 @@ export class Producto{
   private precioFinal:number
   constructor
   (
-    public id:String,
+    public ID:String,
     public nombre:String,
     private descripcion:String,
     public cantidad:number,
@@ -14,7 +14,7 @@ export class Producto{
 
 
   public getId() {
-    return this.id;
+    return this.ID;
   }
 
   public getNombre() {

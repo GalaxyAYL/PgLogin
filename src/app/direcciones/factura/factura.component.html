@@ -1,3 +1,5 @@
+<link href="https://fonts.cdnfonts.com/css/bank-gothic" rel="stylesheet">
+
 <!doctype html>
 
 
@@ -76,34 +78,23 @@
 
               <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                 <li>
-                  <a href="#" class="nav-link text-secondary">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-                    Home
-                  </a>
+                  <button (click)="pgMain()" class="nav-link text-white" style="background-color: rgba(240, 248, 255, 0); border: 0px;">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#buy"/></svg>
+                    Catalogo
+                  </button>
                 </li>
                 <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                    Dashboard
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
+                  <button (click)="pgFactura()" class="nav-link text-white" style="background-color: rgba(240, 248, 255, 0); border: 0px;">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-                    Orders
-                  </a>
+                    Factura
+                  </button>
                 </li>
+
                 <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                    Products
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
+                  <button (click)="pgLogin()" class="nav-link text-white" style="background-color: rgba(240, 248, 255, 0); border: 0px;">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
-                    Customers
-                  </a>
+                    Salir
+                  </button>
                 </li>
               </ul>
             </div>
@@ -114,13 +105,13 @@
   </section>
 <br>
 
-
         <p>Cliente</p>
         <p>Jose Ayala</p>
         <p>Cedula</p>
         <p>0107626079</p>
         <p>Productos</p>
-        <p>{{comprados[0].getNombre()}}</p>
+        <p>{{comprados}}</p>
+
 
 <br>
 
